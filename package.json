@@ -1,0 +1,23 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "A simple mentorship site with email functionality using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",  
+    "build": "echo 'No build step required for Netlify'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.3.0"  
+  },
+  "engines": {
+    "node": "14.x" 
+  },
+  "netlify": {
+    "functions": "functions"  
+  }
+}

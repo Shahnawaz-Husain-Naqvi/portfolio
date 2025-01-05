@@ -1,0 +1,23 @@
+[build]
+  functions = "functions"  # Serverless functions folder
+  publish = "public"  # Static files folder
+
+[[redirects]]
+  from = "/submit"
+  to = "/.netlify/functions/index"  # Redirect to serverless function (POST requests)
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"  # Redirect root to index.html
+  status = 200
+
+[[redirects]]
+  from = "/paymentgateway"
+  to = "/payment.html"  # Redirect /paymentgateway to payment.html
+  status = 200
+
+[[redirects]]
+  from = "/finalpage"
+  to = "/finalpage.html"  # Redirect /finalpage to finalpage.html
+  status = 200

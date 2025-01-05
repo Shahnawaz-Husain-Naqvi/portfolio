@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shahnawaz Husain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        a{
+            color:#00162c;
+        }
+        header {
+            background-color: #003366; /* Navy blue */
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: #003366; /* Navy blue */
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .bio {
+            text-align: center; /* Center text */
+        }
+
+        .bio img {
+            max-width: 400px;
+            border-radius: 5%;
+            margin-bottom: 1rem;
+            display: block; /* Ensures the image behaves like a block element */
+            margin-left: auto; /* Centers the image */
+            margin-right: auto; /* Centers the image */
+        }
+
+        .bio p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .services li:hover {
+            transform: translateY(-10px);
+        }
+
+        .services h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .services p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .services form {
+            text-align: center;
+        }
+
+        button {
+            padding: 0.8rem 2rem;
+            background-color: #003366; /* Navy blue */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #002244; /* Darker navy blue */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #002244; /* Darker navy blue */
+            color: white;
+            padding: 1.5rem;
+        }
+
+        footer a {
+            color: #e61b1b; /* Green accent for links */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            .services li {
+                padding: 1rem;
+            }
+
+            .services h3 {
+                font-size: 1.6rem;
+            }
+
+            .bio img {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .bio p {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .services li {
+                padding: 0.8rem;
+            }
+
+            .services h3 {
+                font-size: 1.4rem;
+            }
+
+            button {
+                padding: 0.8rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shahnawaz Husain</h1>
+        <p>AI Engineer</p>
+    </header>
+
+    <div class="container">
+        <!-- Image and Bio Section -->
+        <section class="bio">
+            <img src="shahnawaz.jpg" alt="Shahnawaz Husain">
+            <p>Hello, I'm Shahnawaz Husain, an AI Engineer with a passion for transforming data into intelligent, actionable insights. With a strong foundation in machine learning, deep learning, and natural language processing, I specialize in designing and implementing AI systems that solve real-world problems. Whether it's building predictive models, developing chatbots, or automating complex workflows, I work to create solutions that empower businesses and enhance user experiences.
+
+            I believe in the power of AI to drive innovation and am constantly learning and adapting to stay ahead in this rapidly evolving field. Let's work together to harness the potential of AI and make your ideas smarter, more efficient, and future-ready.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>
+                    <h3>Mentorship</h3>
+                    <h4>30 Minutes Call: INR 500</h4><br>
+                    <h4>60 Minutes Call: INR 1000</h4><br>
+                    <h4>10 Days Mentorship: INR 5000</h4><br>
+                    <form action="/paymentgateway" method="GET">
+                        <button type="submit">Get Mentorship</button>
+                    </form>
+                </li>
+                <li>
+                    <h3>AI Solutions</h3>
+                    <p>Unlock the potential of artificial intelligence with our tailored AI solutions. Whether you're looking to integrate machine learning models, automate processes, or enhance decision-making capabilities, we provide custom AI-powered solutions designed to drive efficiency and innovation. Our team specializes in developing intelligent systems that analyze data, predict trends, and optimize business operations. Let us help you stay ahead in an increasingly automated world.</p>
+                    <p>Contact us at <a href="mailto:husainshahnawaz15.com">husainshahnawaz15.com</a></p>
+                </li>
+                <li>
+                    <h3>Full Stack Projects</h3>
+                    <p>From front-end interfaces to back-end databases, our full-stack development services provide end-to-end solutions for building robust, scalable web applications. Whether you need a dynamic, user-friendly interface or a secure, efficient server-side architecture, our team specializes in both front-end technologies (like HTML, CSS, JavaScript) and back-end frameworks (such as Node.js, Python, Ruby). We deliver seamless, integrated applications that perform across all platforms and devices. Partner with us to bring your ideas to life with a complete, reliable solution.</p>
+                    <p>Contact us at <a href="mailto:husainshahnawaz15.com">husainshahnawaz15.com</a></p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Contact me at <a href="mailto:husainshahnawaz15.com">husainshahnawaz15.com</a></p>
+        <p>&copy; 2025 Shahnawaz Husain</p>
+    </footer>
+
+</body>
+</html>
